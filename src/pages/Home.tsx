@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Hero from "../components/organisms/Hero";
 import ProductGrid from "../components/organisms/ProductGrid";
-import { getProducts } from "../components/utils/api";
+import { getProducts } from "../utils/api";
 import type { Product } from "../types/Product";
 
 const Home = () => {
