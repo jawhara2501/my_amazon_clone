@@ -62,6 +62,25 @@ const reducer = (state: State, action: Action): State => {
       };
     }
 
+    case "INCREASE_QTY": {
+      return {
+        cart: state.cart.map(item =>
+          item.id === action.payload
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        ),
+      };
+    }
+
+    case "DECREASE_QTY": {
+      return {
+        cart: state.cart.map(item =>
+          item.id === action.payload && item.quantity > 1
+            ? { ...item, quantity: item.quantity - 1 }
+            : item
+        ),
+      };
+    }
     default:
       return state;
     }

@@ -9,7 +9,7 @@ createRoot(document.getElementById('root')!).render(
     <CartProvider>
       <App />
     </CartProvider>
-  </StrictMode>,
+  </StrictMode>
 )
 
 
