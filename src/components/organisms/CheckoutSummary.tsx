@@ -43,7 +43,7 @@ const CheckoutSummary = () => {
       <h2 className="text-lg text-black">
         Subtotal ({totalItems} items):{" "}
         <span className="font-semibold text-black">
-          ₹{subtotal.toLocaleString()}
+          ${subtotal.toLocaleString()}
         </span>
       </h2>
 

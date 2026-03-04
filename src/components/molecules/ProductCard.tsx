@@ -91,7 +91,7 @@ const ProductCard = ({ product }: Props) => {
       </div>
 
       <p className="font-bold mt-2 text-black">
-        ₹{product.price}
+        ${product.price}
       </p>
 
       <button

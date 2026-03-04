@@ -79,7 +79,7 @@ const Cart = () => {
               {state.cart.reduce((t,i) => t + i.quantity, 0)} items
               ):{" "}
               <span className="font-semibold">
-                ₹
+                $
                 {state.cart
                   .reduce((t, i) => t + i.price * i.quantity, 0)
                   .toLocaleString()}
