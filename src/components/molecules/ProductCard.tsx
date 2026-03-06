@@ -106,7 +106,7 @@ const ProductCard = ({ product }: Props) => {
   );
 };
 
-
+export default ProductCard;
 
 // const ProductCard = ({ product }: { product: Product }) => {
   
@@ -143,4 +143,3 @@ const ProductCard = ({ product }: Props) => {
   // );
 // };
 
-export default ProductCard;

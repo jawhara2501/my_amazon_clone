@@ -146,7 +146,7 @@ export default CartItem; */}
       {/* RIGHT: PRICE */}
       <div className="w-full md:w-auto md:text-right text-black">
         <div className="text-lg font-semibold mt-4 md:mt-0">
-          ${(product.price).toLocaleString()}
+          ${(product.price ?? 0).toLocaleString()}
         </div>
       </div>
     </div>
